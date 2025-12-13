@@ -6,4 +6,5 @@ Ejercicio 2
 
 Para comprobar necesita:
 npm install
+luego
 npm start 
