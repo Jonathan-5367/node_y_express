@@ -1,0 +1,104 @@
+:root {
+    /*Paleta de colores*/
+    --color-bg-modal: #8daaf0;
+    --color-btn-cerrar: #f87171;
+    --color-border: #06a03c;
+    --color-btn-hover: #4cda7e;
+    --color-bg-table: #30d208;
+}
+
+/*Apartado Principal*/
+main {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  gap: 30px;              
+}
+
+/*Formulario de Peliculas*/
+#formPelicula {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;              
+  padding: 20px;
+  border: 3px solid var(--color-border);
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;         
+  gap: 15px;                     
+  font-size: 18px;
+}
+
+/* Etiquetas */
+#formPelicula label {
+  font-weight: bold;
+  color: var(--color-border);
+}
+
+/* Inputs y selects */
+#formPelicula input,
+#formPelicula select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Botón */
+#formPelicula button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--color-border);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#formPelicula button:hover {
+  background-color: var(--color-btn-hover);
+  transform: scale(1.05);
+}
+
+
+
+table {
+    border: 5px solid var(--color-border);
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+th, td {
+    border: 2px solid var(--color-border);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+      background-color: var(--color-bg-table);
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+.backbtn {
+font-size: 15px;
+padding: 10px 20px;
+background-color: var(--color-bg-btn-2);
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.backbtn:hover {
+    transform: scale(1.2);
+    background-color: var(--color-bg-btn-2-hover);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio 1</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/ejercicio_1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ejercicio 1</h1>
+    </header>
+    <main>
+      <!--Formulario:Escribe un nombre de un animal para guardarlo y enviarlo al modal-->
+      <div class="form-content">
+        <label for="animal">Ingrese el nombre de su animal favorito</label>
+        <form action="/animal" method="POST" id="form">
+          <input type="text" id="animal" name="animal" required />
+          <button type="submit" class="modalbtn" id="abrirModalBtn">
+            Enviar
+          </button>
+        </form>
+        <!--Boton Volver-->
+        <botton class="backbtn">
+          <a href="/index.html">Volver al Inicio</a>
+        </botton>
+      </div>
+
+      <!--Modal: muestra el nombre de un animal en pantalla-->
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="cerrar" id="cerrarModalBtn">X</span>
+          <h2>Tu animal favorito es:</h2>
+          <p></p>
+        </div>
+      </div>
+    </main>
+    <!--Script Modal y Captura-->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

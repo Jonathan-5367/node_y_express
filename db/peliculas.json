@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titulo": "Origen",
+    "genero": "Ciencia Ficción",
+    "pais": "Estados Unidos"
+  },
+  {
+    "id": 2,
+    "titulo": "Amélie",
+    "genero": "Comedia",
+    "pais": "Francia"
+  },
+  {
+    "id": 3,
+    "titulo": "Duro de matar",
+    "genero": "Acción",
+    "pais": "Estados Unidos"
+  }
+]

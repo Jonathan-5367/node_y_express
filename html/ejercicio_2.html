@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ejercicio 2</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/ejercicio_2.css" />
+  </head>
+  <body>
+    <header><h1>Ejercicio 2</h1></header>
+    <main>
+      <!-- Formulario para agregar película -->
+      <form id="formPelicula">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required />
+
+        <!--Seleccion en lista para el genero-->
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+          <option value="Acción">Acción</option>
+          <option value="Comedia">Comedia</option>
+          <option value="Drama">Drama</option>
+          <option value="Fantasía">Fantasía</option>
+          <option value="Ciencia Ficción">Ciencia Ficción</option>
+        </select>
+        <!--Seleccion en lista para el el pais-->
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Estados Unidos">Estados Unidos</option>
+          <option value="España">España</option>
+          <option value="Japón">Japón</option>
+          <option value="Francia">Francia</option>
+          <option value="Gran Bretaña">Gran Bretaña</option>
+        </select>
+        <!--Boton para guardar la pelicula-->
+        <button type="submit">Guardar Película</button>
+      </form>
+
+      <!--Boton Volver-->
+      <botton class="backbtn">
+          <a href="/index.html">Volver al Inicio</a>
+        </botton>
+      </div>
+
+      <!--Tabla para mostrar las peliculas-->
+      <table class="tabla-pelis" id="peliculas">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>País</th>
+            <th>Género</th>
+          </tr>
+        </thead>
+        <tbody>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+      </table>
+    </main>
+    <!--TypScrip aqui se encuentran la caracteristica enum y sus funciones-->
+    <script src="/js/peliculas.js"></script>
+  </body>
+</html>
